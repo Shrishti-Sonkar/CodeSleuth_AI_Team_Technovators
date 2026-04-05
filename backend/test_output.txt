@@ -1,0 +1,33 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.6, pytest-8.2.0, pluggy-1.6.0 -- C:\Users\HP\OneDrive\Desktop\MNNIT\backend\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\HP\OneDrive\Desktop\MNNIT\backend
+configfile: pytest.ini
+plugins: anyio-4.13.0, asyncio-0.23.6
+asyncio: mode=Mode.AUTO
+collecting ... collected 22 items
+
+tests/test_graph.py::test_dependency_graph_nodes PASSED                  [  4%]
+tests/test_graph.py::test_dependency_edge_created PASSED                 [  9%]
+tests/test_graph.py::test_no_self_loops PASSED                           [ 13%]
+tests/test_graph.py::test_call_graph_function_nodes PASSED               [ 18%]
+tests/test_graph.py::test_call_graph_edge PASSED                         [ 22%]
+tests/test_graph.py::test_json_roundtrip PASSED                          [ 27%]
+tests/test_ingest.py::test_ingest_returns_session_id PASSED              [ 31%]
+tests/test_ingest.py::test_ingest_status_not_found PASSED                [ 36%]
+tests/test_ingest.py::test_ingest_status_queued PASSED                   [ 40%]
+tests/test_ingest.py::test_ingest_delete_session PASSED                  [ 45%]
+tests/test_parser.py::test_python_imports PASSED                         [ 50%]
+tests/test_parser.py::test_python_functions PASSED                       [ 54%]
+tests/test_parser.py::test_python_classes PASSED                         [ 59%]
+tests/test_parser.py::test_python_complexity PASSED                      [ 63%]
+tests/test_parser.py::test_unknown_language_no_error PASSED              [ 68%]
+tests/test_parser.py::test_syntax_error_handled PASSED                   [ 72%]
+tests/test_risk.py::test_detects_aws_key PASSED                          [ 77%]
+tests/test_risk.py::test_detects_github_token PASSED                     [ 81%]
+tests/test_risk.py::test_detects_hardcoded_password PASSED               [ 86%]
+tests/test_risk.py::test_no_false_positive_placeholder PASSED            [ 90%]
+tests/test_risk.py::test_line_number_accuracy PASSED                     [ 95%]
+tests/test_risk.py::test_clean_file_has_no_matches PASSED                [100%]
+
+============================= 22 passed in 7.19s ==============================

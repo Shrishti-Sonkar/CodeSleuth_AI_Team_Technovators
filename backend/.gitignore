@@ -1,0 +1,9 @@
+storage/
+storage/.chroma/
+storage/.cache/
+*.log
+__pycache__/
+.venv/
+.env
+*.pyc
+.DS_Store
